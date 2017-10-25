@@ -27,7 +27,7 @@ class TestArrays(unittest.TestCase):
     def test_reorderArrayWithEvenFirst(self):
         reorderedArray = [1,2,3]
         reorderArrayWithEvenFirst(reorderedArray)
-        self.assertSequenceEqual(reorderedArray, [2,1,3])
+        self.assertSequenceEqual(reorderedArray, [2, 3, 1])
 
 
 if __name__ == '__main__':
