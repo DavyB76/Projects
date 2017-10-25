@@ -6,8 +6,6 @@ from parity import process_parity
 
 
 class TestTypesBootcamp(unittest.TestCase):
-    # Chaque méthode dont le nom commence par 'test_'
-    # est un test.
     def test_count_bits(self):
         bit_nb = count_bits(12)
         self.assertEqual(bit_nb, 2)
@@ -25,9 +23,9 @@ class TestParityCheck(unittest.TestCase):
 
 class TestArrays(unittest.TestCase):
     def test_reorderArrayWithEvenFirst(self):
-        reorderedArray = [1,2,3]
-        reorderArrayWithEvenFirst(reorderedArray)
-        self.assertSequenceEqual(reorderedArray, [2, 3, 1])
+        reordered_array = [1, 2, 3]
+        reorderArrayWithEvenFirst(reordered_array)
+        self.assertSequenceEqual(reordered_array, [2, 3, 1])
 
 
 if __name__ == '__main__':
