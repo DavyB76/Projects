@@ -24,6 +24,7 @@ class TestParityCheck(unittest.TestCase):
 class TestArrays(unittest.TestCase):
     def test_reorderArrayWithEvenFirst(self):
         reordered_array = [1, 2, 3]
+        #reordered_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         reorderArrayWithEvenFirst(reordered_array)
         self.assertSequenceEqual(reordered_array, [2, 3, 1])
 
