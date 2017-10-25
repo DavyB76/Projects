@@ -1,11 +1,8 @@
 import unittest
 
+from arrays import reorderArrayWithEvenFirst
 from count_bits import count_bits
 from parity import process_parity
-
-
-# Cette classe est un groupe de tests. Son nom DOIT commencer
-# par 'Test' et la classe DOIT hériter de unittest.TestCase.
 
 
 class TestTypesBootcamp(unittest.TestCase):
@@ -26,7 +23,12 @@ class TestParityCheck(unittest.TestCase):
         self.assertEqual(parity, 1)
 
 
-# Ceci lance le test si on exécute le script
-# directement.
+class TestArrays(unittest.TestCase):
+    def test_reorderArrayWithEvenFirst(self):
+        reorderedArray = [1,2,3]
+        reorderArrayWithEvenFirst(reorderedArray)
+        self.assertSequenceEqual(reorderedArray, [2,1,3])
+
+
 if __name__ == '__main__':
     unittest.main()
